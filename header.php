@@ -30,6 +30,15 @@ if (!defined('ABSPATH'))
 
     <?php get_search_form(); ?>
 
+
+    <?php 
+       if ( function_exists( 'the_custom_logo' ) ) {
+        the_custom_logo();
+    }
+    ?>
+
+    
+
     <div class="site-title">
         <a href="<?php echo get_option('home'); ?>">
           <?php bloginfo('name'); ?>

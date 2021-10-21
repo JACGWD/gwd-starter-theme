@@ -90,14 +90,6 @@ if(!function_exists('eg_enableWidgets')) {
 
 
 
-
-
-
-
-
-
-
-
   /*
 // ADD ADDITIONAL FEATURES TO THE SITE
 */
@@ -113,6 +105,25 @@ function gwd_starter_theme_init(){
 
     add_theme_support( 'woocommerce' );
     // Adds support for the WooCommerce e-commerce plugin
+
+    add_theme_support( 'custom-logo' , array( // Adds support for adding a custom logo via the Theme Customizer page
+        'height' => 200,
+        'width' => 200,
+        'flex-width' => true,
+        'flex-height' => true,
+        'unlink-homepage-logo' => true,
+        'header-text' => array( 'site-title', 'site-description' ),
+      ));
+
+      add_theme_support( 'post-formats', array(
+        'gallery',
+        'video',
+        'aside',
+        'image',
+        'audio',
+        ) );
+    
+    add_theme_support( 'responsive-embeds' );  // The embed blocks automatically apply styles to embedded content to reflect the aspect ratio of content that is embedded in an iFrame, such as YouTube videos or Google Maps. 
     
     add_theme_support('html5',
     array('comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'figure', 'figcaption', 'nav', 'section')
@@ -123,7 +134,7 @@ function gwd_starter_theme_init(){
     // ADDS THESE FEATURES TO WP
     add_action('after_setup_theme', 'gwd_starter_theme_init'); 
 
-    // Add this code inside the PHP tags of the functions.php file in your theme.
+
 
 
 
