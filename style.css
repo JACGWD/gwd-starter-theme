@@ -29,10 +29,42 @@ Use it to make something cool, have fun, and share what you've learned with othe
   
 
 
-  /* DEFAULT STYLES FOR ALL VIEWPORT SIZES */
+/* DEFAULT STYLES FOR ALL VIEWPORT SIZES */
+/* Extra-Small devices (portrait phones, less than 576px)  */
 
   body {font-size: 100%;}
   h1,h2,h3,h4,h5,h6 {font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif; color: var(--titles-color)}
   p, li, a {font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 
   /* END DEFAULT STYLES FOR ALL VIEWPORT SIZES */
+
+
+
+  
+
+/* No media query for `xs` since this is the default  */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  
+  
+}

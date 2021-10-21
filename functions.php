@@ -14,7 +14,11 @@ if(is_admin()) {require_once('admin/admin-functions.php');}
  * Proper way to enqueue scripts and styles.
  */
 function gwd_starter_theme_scripts() {
-    wp_enqueue_style( 'style-name', get_stylesheet_uri() );
+
+    $stylesheet=get_stylesheet_directory().'/style.css';
+    $stylesheet_version = filemtime($stylesheet);
+
+    wp_enqueue_style( 'style-name', get_stylesheet_uri(), array(), $stylesheet_version );
 
     /*
     If you have javascripts, uncomment the line below (remove the //)
