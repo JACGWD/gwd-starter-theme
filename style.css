@@ -1,0 +1,38 @@
+/*
+Theme Name: GWD Starter Theme
+Author: Eric Girouard
+Author URI: https://graphicandwebdesign.ca/
+Description: Default theme builder exercise
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: starter 
+Text Domain: gwdstarter
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+/* COLOR PALETTE */
+
+:root {
+    --main-bg-color: rgb(255, 255, 255);
+    --main-fg-color: rgb(1, 35, 70);
+    --titles-color: #1c0263;
+    --bodytext-color: #444444;
+  }
+
+  
+  /* END COLOR PALETTE */
+
+  
+
+
+  /* DEFAULT STYLES FOR ALL VIEWPORT SIZES */
+
+  body {font-size: 100%;}
+  h1,h2,h3,h4,h5,h6 {font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif; color: var(--titles-color)}
+  p, li, a {font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+  /* END DEFAULT STYLES FOR ALL VIEWPORT SIZES */
