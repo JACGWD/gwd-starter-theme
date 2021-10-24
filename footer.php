@@ -27,8 +27,11 @@ if (!defined('ABSPATH'))
 
 	
 	</footer>
-	 <!---  FOOTER   ENDS   HERE -----> 
+	 <!---  FOOTER ENDS HERE -----> 
   
+
+</div>
+<!---  CONTAINER DIV ENDS HERE -----> 
 
 </body>
 </html>

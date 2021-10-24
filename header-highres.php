@@ -49,3 +49,7 @@ if (!defined('ABSPATH'))
 
 </header> 
 <!--- HEADER ENDS HERE -----> 
+
+
+<div class="main-container">
+<!---  CONTAINER DIV OPENS HERE ----->
