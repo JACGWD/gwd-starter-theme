@@ -28,9 +28,11 @@ if (!defined('ABSPATH'))
 <!--- HEADER STARTS HERE ----->
 <header>
 
-    <?php get_search_form(); ?>
+<?php get_search_form(); ?>
 
-    <div class="site-title">
+<div id="branding">
+
+<div class="site-title">
         <a href="<?php echo get_option('home'); ?>">
           <?php bloginfo('name'); ?>
         </a>
@@ -42,6 +44,10 @@ if (!defined('ABSPATH'))
           <?php // This is the WP site tagline, not the meta description tag ?>
         </a>
     </div>
+     <!-- END DESCRIPTION -->
+
+  </div>
+  <!-- END BRANDING -->
 
     <nav>
         <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => 'primary-nav' ) ); ?>

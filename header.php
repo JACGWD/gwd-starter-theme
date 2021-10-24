@@ -30,7 +30,7 @@ if (!defined('ABSPATH'))
 
     <?php get_search_form(); ?>
 
-
+<div id="branding">
     <?php 
        if ( function_exists( 'the_custom_logo' ) ) {
         the_custom_logo();
@@ -51,7 +51,11 @@ if (!defined('ABSPATH'))
           <?php // This is the WP site tagline, not the meta description tag ?>
         </a>
     </div>
+    <!-- END DESCRIPTION -->
 
+  </div>
+  <!-- END BRANDING -->
+  
     <nav>
         <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => 'primary-nav' ) ); ?>
     </nav>
