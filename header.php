@@ -24,11 +24,13 @@ if (!defined('ABSPATH'))
 
 <body <?php body_class(); ?>>
 
+<div class="main-container">
+<!---  CONTAINER DIV OPENS HERE ----->
   
 <!--- HEADER STARTS HERE ----->
 <header>
 
-    <?php get_search_form(); ?>
+<?php get_search_form(); ?>
 
 <div id="branding">
     <?php 
@@ -63,6 +65,5 @@ if (!defined('ABSPATH'))
 </header> 
 <!--- HEADER ENDS HERE -----> 
 
-<div class="main-container">
-<!---  CONTAINER DIV OPENS HERE ----->
+
 

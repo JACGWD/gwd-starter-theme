@@ -24,6 +24,8 @@ if (!defined('ABSPATH'))
 
 <body <?php body_class('highres'); ?>>
 
+<div class="main-container">
+<!---  CONTAINER DIV OPENS HERE ----->
   
 <!--- HEADER STARTS HERE ----->
 <header>
@@ -56,6 +58,5 @@ if (!defined('ABSPATH'))
 <!--- HEADER ENDS HERE -----> 
 
 
-<div class="main-container">
-<!---  CONTAINER DIV OPENS HERE ----->
+
 

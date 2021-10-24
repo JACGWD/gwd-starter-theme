@@ -37,6 +37,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* DEFAULT STYLES FOR ALL VIEWPORT SIZES */
 /* Extra-Small devices (portrait phones, less than 576px)  */
 
+img {max-width: 100%; height: auto;}
+
 body {
   font-size: 100%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;

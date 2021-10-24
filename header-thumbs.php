@@ -24,6 +24,8 @@ if (!defined('ABSPATH'))
 
 <body <?php body_class('thumbs'); ?>>
 
+<div class="main-container">
+<!---  CONTAINER DIV OPENS HERE ----->
   
 <!--- HEADER STARTS HERE ----->
 <header>
