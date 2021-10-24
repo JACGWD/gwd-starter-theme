@@ -11,8 +11,6 @@ if (!defined('ABSPATH'))
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 
-<!-- <link rel='stylesheet'  href='<?php // echo get_stylesheet_directory_uri(); ?>/reset/modern-css-reset.css' media='all' /> -->
-
 
 <!-- **************** GET HEADER********************* -->
 

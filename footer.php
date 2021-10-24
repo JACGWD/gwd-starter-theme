@@ -14,7 +14,7 @@ if (!defined('ABSPATH'))
     </nav>
 
 
-		<p>&copy;Eric Girouard, 2021</p>
+		<p>&copy; Billy Poppins, 2021</p>
 		
 	
 <!-- ********  GET FOOTER ******************** -->

@@ -13,6 +13,11 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+
+
+
+
+
 /* COLOR PALETTE */
 
 :root {
@@ -24,18 +29,21 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 /* END COLOR PALETTE */
 
+
+
+
+
+
 /* DEFAULT STYLES FOR ALL VIEWPORT SIZES */
 /* Extra-Small devices (portrait phones, less than 576px)  */
 
-
 img {max-width: 100%; height: auto;}
-
-.custom-logo {width: 150px; height: 150px;}
 
 body {
   font-size: 100%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
 
 h1,
 h2,
@@ -46,7 +54,6 @@ h6 {
   font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
   color: var(--titles-color);
 }
-
 p,
 li,
 a {
@@ -55,39 +62,46 @@ a {
 
 /* END DEFAULT STYLES FOR ALL VIEWPORT SIZES */
 
+
+
 /* --------------------------------------
    MEDIA QUERIES FOR LARGER VIEWPORTS
------------------------------------------ */
+----------------------------------------- */   
 
 /* No media query for "extra small" since this is the default  
    The following media query sizes are taken from Bootstrap 5
    See: https://getbootstrap.com/docs/5.1/layout/breakpoints/
 */
 
+
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 }
+
+
+
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 }
 
+
+
+
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  header {
-    display: flex;
-  }
-
-  .main-container {
-    width: 960px;
-    border: 1px solid #444;
-    margin: 0 auto;
-  }
 }
+
+
+
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 }
+
+
+
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
