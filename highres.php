@@ -32,11 +32,14 @@ if (!defined('ABSPATH'))
         <?php if (is_page_template('highres.php')){ eg_CAnav(false); } ?>
 
 
-    <?php // SITE READER COMMENTS  ?>
+    <?php // SITE READER COMMENTS  
+          // See: https://developer.wordpress.org/reference/classes/wp_comment_query/
+    ?>
 
-       <?php //Get only the approved comments
+       <?php // Get only the approved comments
             $args = array(
-                'status' => 'approve'
+                'status' => 'approve',
+                'post_id' => get_the_ID()
             );
             
             // The comment Query
