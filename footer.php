@@ -13,6 +13,10 @@ if (!defined('ABSPATH'))
         <?php wp_nav_menu( array( 'theme_location' => 'footer-menu', 'container_class' => 'footer-nav' ) ); ?>
     </nav>
 
+	<nav>
+        <?php wp_nav_menu( array( 'theme_location' => 'social-menu', 'container_class' => 'footer-social' ) ); ?>
+    </nav>
+
 
 		<p>&copy; Billy Poppins, 2021</p>
 		

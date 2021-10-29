@@ -2,11 +2,7 @@
 // Add this to all your php files for added security
 
 if (!defined('ABSPATH'))
-	exit; // Exit if accessed directly.
-
-
-if(is_admin()) {require_once('admin/admin-functions.php');}
-       
+	exit; // Exit if accessed directly       
 
        
 
@@ -31,23 +27,6 @@ add_action( 'wp_enqueue_scripts', 'gwd_starter_theme_scripts' );
 
 
 
-/**
- * Include Google Fonts: Preconnect
- */
-function gwd_starter_theme_googleFontsPreconnect(){
-	echo '<link rel="preconnect" href="https://fonts.gstatic.com" />';
-}
-add_action('wp_head', 'gwd_starter_theme_googleFontsPreconnect', 10);
-
-
-
-/**
- * Include Google Fonts: The Font itself
- */
-function gwd_starter_theme_googleFonts(){
-	wp_enqueue_style( 'google-fonts-lato', 'https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap"' );
-}
-add_action('wp_enqueue_scripts', 'gwd_starter_theme_googleFonts', 11);
 
 
 
@@ -73,7 +52,7 @@ if(!function_exists('eg_enableWidgets')) {
 /*
   // ADD THE MENU SYSTEM
   */
-  function register_my_menus() {
+  function register_gwd_starter_menus() {
       register_nav_menus(
         array(
           'header-menu' => __( 'Header Menu' ),
@@ -82,7 +61,7 @@ if(!function_exists('eg_enableWidgets')) {
         )
       );
     }
-  add_action( 'init', 'register_my_menus' ); 
+  add_action( 'init', 'register_gwd_starter_menus' ); 
 
 
 
