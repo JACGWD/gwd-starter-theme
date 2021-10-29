@@ -1,14 +1,12 @@
 <?php
-// Add this to all your php files for added security
+// ADD THIS TO ALL YOUR PHP FILES FOR ADDED SECURITY
 
 if (!defined('ABSPATH'))
-	exit; // Exit if accessed directly       
+	exit; // EXIT IF ACCESSED DIRECTLY       
 
        
 
-/*
- * Proper way to enqueue scripts and styles.
- */
+// PROPER WAY TO ENQUEUE SCRIPTS AND STYLES.
 function gwd_starter_theme_scripts() {
 
     $stylesheet=get_stylesheet_directory().'/style.css';
@@ -17,7 +15,7 @@ function gwd_starter_theme_scripts() {
     wp_enqueue_style( 'style-name', get_stylesheet_uri(), array(), $stylesheet_version );
 
     /*
-    If you have javascripts, uncomment the line below (remove the //)
+    IF YOU HAVE JAVASCRIPTS, UNCOMMENT THE LINE BELOW (REMOVE THE //)
     */
 
     // wp_enqueue_script( 'script-name', get_template_directory_uri() . '/js/combined-scripts.js', array(), '1.0.0', true );
@@ -30,7 +28,7 @@ add_action( 'wp_enqueue_scripts', 'gwd_starter_theme_scripts' );
 
 
 
-// Enable sidebar and widgets
+// ENABLE SIDEBAR AND WIDGETS
 if(!function_exists('eg_enableWidgets')) {
     add_action( 'widgets_init', 'eg_enableWidgets' );
     function eg_enableWidgets(){
@@ -69,23 +67,23 @@ if(!function_exists('eg_enableWidgets')) {
 
 
 
-  /*
+
 // ADD ADDITIONAL FEATURES TO THE SITE
-*/
+
 
 // ADD FEATURES TO THE THEME
 function gwd_starter_theme_init(){
 
     add_theme_support('post-thumbnails');
-    // Enable featured images and post thumbnails
+    // ENABLE FEATURED IMAGES AND POST THUMBNAILS
     
     add_theme_support('title-tag');
     // Adds a custom <title> tag in the <head>
 
     add_theme_support( 'woocommerce' );
-    // Adds support for the WooCommerce e-commerce plugin
+    // ADDS SUPPORT FOR THE WOOCOMMERCE E-COMMERCE PLUGIN
 
-    add_theme_support( 'custom-logo' , array( // Adds support for adding a custom logo via the Theme Customizer page
+    add_theme_support( 'custom-logo' , array( // ADDS SUPPORT FOR ADDING A CUSTOM LOGO VIA THE THEME CUSTOMIZER PAGE
         'height' => 200,
         'width' => 200,
         'flex-width' => true,
@@ -102,15 +100,15 @@ function gwd_starter_theme_init(){
         'audio',
         ) );
     
-    add_theme_support( 'responsive-embeds' );  // The embed blocks automatically apply styles to embedded content to reflect the aspect ratio of content that is embedded in an iFrame, such as YouTube videos or Google Maps. 
+    add_theme_support( 'responsive-embeds' );  // THE EMBED BLOCKS AUTOMATICALLY APPLY STYLES TO EMBEDDED CONTENT TO REFLECT THE ASPECT RATIO OF CONTENT THAT IS EMBEDDED IN AN IFRAME, SUCH AS YOUTUBE VIDEOS OR GOOGLE MAPS. 
     
     add_theme_support('html5',
     array('comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'figure', 'figcaption', 'nav', 'section')
-    // Forces WP to use semantic HTML 5 tags such as <figure> and <figcaption>
+    // FORCES WP TO USE SEMANTIC HTML 5 TAGS SUCH As <figure> AND <figcaption>
     );
     }
     
-    // ADDS THESE FEATURES TO WP
+    // ADDS ALL THESE FEATURES TO WP
     add_action('after_setup_theme', 'gwd_starter_theme_init'); 
 
 
