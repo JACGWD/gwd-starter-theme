@@ -41,7 +41,7 @@ img {max-width: 100%; height: auto;}
 
 body {
   font-size: 100%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--bodytext-color);
 }
 
 
@@ -51,14 +51,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
   color: var(--titles-color);
 }
-p,
-li,
-a {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
+
 
 /* END DEFAULT STYLES FOR ALL VIEWPORT SIZES */
 
@@ -75,34 +70,67 @@ a {
 
 
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+/* 
+SMALL DEVICES (LANDSCAPE PHONES, 576PX AND UP) 
+MOBILE DEVICES ARE USUALLY RETINA DISPLAY, SO USE 2X IMAGES
+USE EITHER LANDSCAPE OR PORTRAIT IMAGES
+*/
+
+@media only screen and (min-width: 576px) { 
+}
+
+@media only screen and (min-width: 576px) and (orientation: portrait) { 
+}
+
+@media only screen and (min-width: 576px) and (orientation: landscape) {
 }
 
 
 
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+/* MEDIUM DEVICES (TABLETS, 768PX AND UP) */
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+}
+
+@media only screen and (min-width: 768px) and (orientation: landscape) {
 }
 
 
+
+/* LAPTOPS AND DESKTOPS CAN BE REGULAR OR RETINA DISPLAY  */
 
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media (min-width: 992px) and (-webkit-min-device-pixel-ratio: 1) {
+  /* regular screens */
+}
+
+@media (min-width: 992px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  /* Retina screens */
 }
 
 
 
 
 /* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+  /* regular screens */
+}
+
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  /* Retina screens */
 }
 
 
 
-
 /* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
+@media (min-width: 1400px) and (-webkit-min-device-pixel-ratio: 1) {
+  /* regular screens */
+}
+
+@media (min-width: 1400px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+/* Retina screens */
 }
