@@ -35,8 +35,6 @@ if (!defined('ABSPATH'))
 echo "<h3>Sharing</h3>";
 // ADD THE SOCIAL MEDIA SHARING ICONS
 get_template_part( 'parts/page', 'social' );
-
-echo "act_url:" . $act_url;
 ?>
 
 
