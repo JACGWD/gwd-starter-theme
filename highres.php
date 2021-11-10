@@ -31,9 +31,21 @@ if (!defined('ABSPATH'))
       
         <?php if (is_page_template('highres.php')){ eg_CAnav(false); } ?>
 
+<?php
+echo "<h3>Sharing</h3>";
+// ADD THE SOCIAL MEDIA SHARING ICONS
+get_template_part( 'social' );
+?>
+
+
+
+
+
 
     <?php // SITE READER COMMENTS  
           // See: https://developer.wordpress.org/reference/classes/wp_comment_query/
+
+          echo "<h3>Comments</h3>";
     ?>
 
        <?php // Get only the approved comments
