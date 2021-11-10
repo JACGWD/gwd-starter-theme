@@ -78,12 +78,15 @@ USE EITHER LANDSCAPE OR PORTRAIT IMAGES
 */
 
 @media only screen and (min-width: 576px) { 
+    /* all screens */
 }
 
 @media only screen and (min-width: 576px) and (orientation: portrait) { 
+  /* portrait screens */
 }
 
 @media only screen and (min-width: 576px) and (orientation: landscape) {
+  /* landscape screens */
 }
 
 
@@ -91,12 +94,15 @@ USE EITHER LANDSCAPE OR PORTRAIT IMAGES
 
 /* MEDIUM DEVICES (TABLETS, 768PX AND UP) */
 @media only screen and (min-width: 768px) {
+    /* all screens */
 }
 
 @media only screen and (min-width: 768px) and (orientation: portrait) {
+    /* portrait screens */
 }
 
 @media only screen and (min-width: 768px) and (orientation: landscape) {
+    /* landscape screens */
 }
 
 
@@ -105,6 +111,9 @@ USE EITHER LANDSCAPE OR PORTRAIT IMAGES
 
 
 /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* all screens */
+}
 @media (min-width: 992px) and (-webkit-min-device-pixel-ratio: 1) {
   /* regular screens */
 }
@@ -117,6 +126,9 @@ USE EITHER LANDSCAPE OR PORTRAIT IMAGES
 
 
 /* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* all screens */
+}
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
   /* regular screens */
 }
@@ -128,6 +140,9 @@ USE EITHER LANDSCAPE OR PORTRAIT IMAGES
 
 
 /* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  /* all screens */
+}
 @media (min-width: 1400px) and (-webkit-min-device-pixel-ratio: 1) {
   /* regular screens */
 }
