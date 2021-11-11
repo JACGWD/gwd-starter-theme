@@ -68,7 +68,7 @@ html.no-js nav.primary-navigation div#menu[hidden] {
 /* Show menu if javascript is off */
 
 
-div#menu {
+ul#menu {
   visibility: hidden !important;
   display: none;
 }
@@ -155,7 +155,7 @@ USE EITHER LANDSCAPE OR PORTRAIT IMAGES
     display: none;
   }
 
-  div#menu {
+  ul#menu {
     display: block  !important;
     visibility: visible !important;
   }
