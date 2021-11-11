@@ -37,5 +37,13 @@ if (!defined('ABSPATH'))
 </div>
 <!---  CONTAINER DIV ENDS HERE -----> 
 
+
+<script src="<?php echo get_template_directory_uri(); ?>/js/modernizr-jacgwd.min.js"></script>
+<?php // load Modernizr for feature detection (classes added to the html tag) ?>
+
+
+<script src="<?php echo get_template_directory_uri();  ?>/js/combined-scripts.js"></script>
+
+
 </body>
 </html>

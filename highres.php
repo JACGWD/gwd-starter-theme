@@ -32,7 +32,7 @@ if (!defined('ABSPATH'))
         <?php if (is_page_template('highres.php')){ eg_CAnav(false); } ?>
 
 <?php
-echo "<h3>Sharing</h3>";
+echo "<h3>Please help me promote my work</h3>";
 // ADD THE SOCIAL MEDIA SHARING ICONS
 get_template_part( 'parts/page', 'social' );
 ?>
