@@ -69,7 +69,7 @@ html.no-js nav.primary-navigation div#menu[hidden] {
 
 
 ul#menu {
-  visibility: hidden !important;
+  visibility: hidden;
   display: none;
 }
 /* Hide drop down menu by default when page loads */
@@ -156,8 +156,8 @@ USE EITHER LANDSCAPE OR PORTRAIT IMAGES
   }
 
   ul#menu {
-    display: block  !important;
-    visibility: visible !important;
+    display: block;
+    visibility: visible;
   }
 
 }
