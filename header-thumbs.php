@@ -59,7 +59,7 @@ if (!defined('ABSPATH'))
 <?php
   wp_nav_menu(array(
 	'menu_class'	  	=> 'primary-menu',
-	'theme_location' 	=> 'primary-menu',
+	'theme_location' 	=> 'header-menu',
 	'menu_id'	    		=> 'menu',
   'container'       => 'div',
 	'container_id'		=> 'menu-container',
