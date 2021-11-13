@@ -55,24 +55,9 @@ h6 {
 }
 
 
-button {
-  padding: 0 !important;
-}
-/* Remove default browser button styles to properly enable text-indent: 100% in .hide-text image replacement */
 
+/* BASIC NAVIGATION FUNCTIONALITY */
 
-html.no-js nav.primary-navigation div#menu[hidden] {
-  display: block !important;
-  visibility: visible !important;
-}
-/* Show menu if javascript is off */
-
-
-ul#menu {
-  visibility: hidden;
-  display: none;
-}
-/* Hide drop down menu by default when page loads */
 
 button {
   padding: 0 !important;
@@ -82,13 +67,40 @@ enable text-indent: 100% in .hide-text image replacement */
 
 
 
+html.no-js nav.primary-navigation div#menu {
+  display: block !important;
+}
+/* Show menu if javascript is off */
+
+
+
+ul#menu {
+  display: none;
+}
+/* Hide drop down menu by default when page loads */
+
+
+
+ul#menu.show-nav {
+  display: block !important;
+}
+/* display navigation class */
+
+
 nav.primary-navigation button {
   height: 32px;
   width: 32px;
   display: block;
   border: none;
-  background-image: url(img/hamburger.png);
+  background-image: url(img/hamburger.svg);
+  background-size: contain;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid #ffffff;
 }
+
+
+/*  END  BASIC NAVIGATION FUNCTIONALITY  */
 
 
 /* END DEFAULT STYLES FOR ALL VIEWPORT SIZES */
@@ -157,7 +169,6 @@ USE EITHER LANDSCAPE OR PORTRAIT IMAGES
 
   ul#menu {
     display: block;
-    visibility: visible;
   }
 
 }

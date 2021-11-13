@@ -13,12 +13,6 @@ function gwd_starter_theme_scripts() {
     $stylesheet_version = filemtime($stylesheet);
 
     wp_enqueue_style( 'style-name', get_stylesheet_uri(), array(), $stylesheet_version );
-
-    /*
-    IF YOU HAVE JAVASCRIPTS, UNCOMMENT THE LINE BELOW (REMOVE THE //)
-    */
-
-    // wp_enqueue_script( 'script-name', get_template_directory_uri() . '/js/combined-scripts.js', array(), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'gwd_starter_theme_scripts' );
 
@@ -115,7 +109,25 @@ function gwd_starter_theme_init(){
 
 
 
-// Adds the previous/next pagination navigation list
+// ENQUEUE MODERNIZR FOR BROWSER FEATURE DETECTION
+function gwdstarter_modernizr() {
+    wp_enqueue_script( 'gwdstarter-modernizr', get_template_directory_uri() . '/js/modernizr-jacgwd.min.js', array(), '1.0.0', true );
+}
+add_action( 'wp_enqueue_scripts', 'gwdstarter_modernizr' );
+
+
+
+
+// ENQUEUE COMBINED-SCRIPTS.JS FILE
+function gwdstarter_scripts() {
+    wp_enqueue_script( 'gwdstarter-script', get_template_directory_uri() . '/js/combined-scripts.js', array( 'jquery' ), '1.0.0', true );
+}
+add_action( 'wp_enqueue_scripts', 'gwdstarter_scripts' );
+
+
+
+
+// ADDS THE PREVIOUS/NEXT PAGINATION NAVIGATION LIST
 
 if (!function_exists('eg_CAnav')){
 // Make sure that function name does not already exist

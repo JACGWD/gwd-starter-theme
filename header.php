@@ -71,7 +71,6 @@ if (!defined('ABSPATH'))
 	'menu_id'	    		=> 'menu',
   'container'       => 'div',
 	'container_id'		=> 'menu-container',
-  'menu_aria_label' => 'hidden'
 ));
 ?>
 </nav>
