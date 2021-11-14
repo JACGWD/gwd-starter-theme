@@ -21,7 +21,7 @@ if (!defined('ABSPATH'))
 
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> class="no-js">
 
 <div class="main-container">
 <!---  CONTAINER DIV OPENS HERE ----->

@@ -12,12 +12,52 @@ function gwd_starter_theme_scripts() {
     $stylesheet=get_stylesheet_directory().'/style.css';
     $stylesheet_version = filemtime($stylesheet);
 
-    wp_enqueue_style( 'style-name', get_stylesheet_uri(), array(), $stylesheet_version );
+    wp_enqueue_style( 'child-theme', get_stylesheet_uri(), array(), $stylesheet_version );
 }
 add_action( 'wp_enqueue_scripts', 'gwd_starter_theme_scripts' );
 
 
 
+
+
+function gwd_starter_theme_jquery_ui_css() {
+    $stylesheet_jquery_ui = get_template_directory_uri().'/js/jquery-ui.min.css';
+    $stylesheet_jquery_ui_version = filemtime($stylesheet_jquery_ui);
+    wp_enqueue_style( 'jquery-ui', get_template_directory_uri().'/js/jquery-ui.min.css', array(), $stylesheet_jquery_ui_version );
+}
+add_action( 'wp_enqueue_scripts', 'gwd_starter_theme_jquery_ui_css' );
+
+
+
+
+
+// ENQUEUE MODERNIZR FOR BROWSER FEATURE DETECTION
+function gwdstarter_modernizr() {
+    $modernizr_path = get_template_directory_uri() . '/js/modernizr-jacgwd.min.js';
+    $modernizr_version = filemtime($stylesheet);
+    wp_enqueue_script( 'gwdstarter-modernizr', get_template_directory_uri() . '/js/modernizr-jacgwd.min.js', array(), $modernizr_version, true );
+}
+add_action( 'wp_enqueue_scripts', 'gwdstarter_modernizr' );
+
+
+
+// ENQUEUE JQUERY-UI.JS FILE
+function gwdstarter_jquery_ui() {
+    $jquery_ui = get_template_directory_uri() . '/js/jquery-ui.min.js';
+    $jquery_ui_version  = filemtime($jquery_ui);
+    wp_enqueue_script( 'gwdstarter_jquery_ui', get_template_directory_uri() . '/js/jquery-ui.min.js', array( 'jquery' ), $jquery_ui_version, true );
+}
+add_action( 'wp_enqueue_scripts', 'gwdstarter_jquery_ui' );
+
+
+
+// ENQUEUE COMBINED-SCRIPTS.JS FILE
+function gwdstarter_combined_scripts() {
+    $combined_scripts = get_template_directory_uri() . '/js/combined-scripts.js';
+    $combined_scripts_version  = filemtime($combined_scripts);
+    wp_enqueue_script( 'gwdstarter_combined_scripts', get_template_directory_uri() . '/js/combined-scripts.js', array( 'jquery' ), $combined_scripts_version, true );
+}
+add_action( 'wp_enqueue_scripts', 'gwdstarter_combined_scripts' );
 
 
 
@@ -107,22 +147,6 @@ function gwd_starter_theme_init(){
 
 
 
-
-
-// ENQUEUE MODERNIZR FOR BROWSER FEATURE DETECTION
-function gwdstarter_modernizr() {
-    wp_enqueue_script( 'gwdstarter-modernizr', get_template_directory_uri() . '/js/modernizr-jacgwd.min.js', array(), '1.0.0', true );
-}
-add_action( 'wp_enqueue_scripts', 'gwdstarter_modernizr' );
-
-
-
-
-// ENQUEUE COMBINED-SCRIPTS.JS FILE
-function gwdstarter_scripts() {
-    wp_enqueue_script( 'gwdstarter-script', get_template_directory_uri() . '/js/combined-scripts.js', array( 'jquery' ), '1.0.0', true );
-}
-add_action( 'wp_enqueue_scripts', 'gwdstarter_scripts' );
 
 
 

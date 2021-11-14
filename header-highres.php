@@ -20,7 +20,7 @@ if (!defined('ABSPATH'))
 
 </head>
 
-<body <?php body_class('highres'); ?>>
+<body <?php body_class('highres'); ?> class="no-js">
 
 <div class="main-container">
 <!---  CONTAINER DIV OPENS HERE ----->

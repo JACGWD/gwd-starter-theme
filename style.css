@@ -67,7 +67,7 @@ enable text-indent: 100% in .hide-text image replacement */
 
 
 
-html.no-js nav.primary-navigation div#menu {
+html.no-js nav.primary-navigation ul#menu {
   display: block !important;
 }
 /* Show menu if javascript is off */
@@ -98,6 +98,15 @@ nav.primary-navigation button {
   cursor: pointer;
   border: 1px solid #ffffff;
 }
+
+ul.pagination li a {
+  /* force hidden text to be clickable when using .hide-text */
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
 
 
 /*  END  BASIC NAVIGATION FUNCTIONALITY  */
