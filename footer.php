@@ -18,7 +18,7 @@ if (!defined('ABSPATH'))
     </nav>
 
 
-		<p>&copy; Billy Poppins, 2021</p>
+		<p>&copy; <?php echo bloginfo('name') ?>, <?php echo date("Y"); ?></p>
 		
 	
 <!-- ********  GET FOOTER ******************** -->
