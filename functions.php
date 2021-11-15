@@ -60,6 +60,15 @@ function gwdstarter_combined_scripts() {
 add_action( 'wp_enqueue_scripts', 'gwdstarter_combined_scripts' );
 
 
+// ENQUEUE COMBINED-SCRIPTS.JS FILE
+function gwdstarter_google() {
+    $gwd_ga = get_template_directory_uri() . '/js/google-analytics.js';
+    $gwd_ga_version  = filemtime($gwd_ga);
+    wp_enqueue_script( 'gwdstarter_google', get_template_directory_uri() . '/js/google-analytics.js', array(), $gwd_ga_version, true );
+}
+add_action( 'wp_enqueue_scripts', 'gwdstarter_google' );
+
+
 
 
 // ENABLE SIDEBAR AND WIDGETS
