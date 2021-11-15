@@ -7,27 +7,15 @@ if (!defined('ABSPATH'))
        
 
 // PROPER WAY TO ENQUEUE SCRIPTS AND STYLES.
-function gwd_starter_theme_scripts() {
 
+
+// ADD THEME CSS
+function gwd_starter_theme_scripts() {
     $stylesheet=get_stylesheet_directory().'/style.css';
     $stylesheet_version = filemtime($stylesheet);
-
     wp_enqueue_style( 'child-theme', get_stylesheet_uri(), array(), $stylesheet_version );
 }
 add_action( 'wp_enqueue_scripts', 'gwd_starter_theme_scripts' );
-
-
-
-
-
-function gwd_starter_theme_jquery_ui_css() {
-    $stylesheet_jquery_ui = get_template_directory_uri().'/js/jquery-ui.min.css';
-    $stylesheet_jquery_ui_version = filemtime($stylesheet_jquery_ui);
-    wp_enqueue_style( 'jquery-ui', get_template_directory_uri().'/js/jquery-ui.min.css', array(), $stylesheet_jquery_ui_version );
-}
-add_action( 'wp_enqueue_scripts', 'gwd_starter_theme_jquery_ui_css' );
-
-
 
 
 
@@ -60,7 +48,7 @@ function gwdstarter_combined_scripts() {
 add_action( 'wp_enqueue_scripts', 'gwdstarter_combined_scripts' );
 
 
-// ENQUEUE COMBINED-SCRIPTS.JS FILE
+// ENQUEUE GOOGLE ANALYTICS JS FILE
 function gwdstarter_google() {
     $gwd_ga = get_template_directory_uri() . '/js/google-analytics.js';
     $gwd_ga_version  = filemtime($gwd_ga);
@@ -90,9 +78,8 @@ if(!function_exists('eg_enableWidgets')) {
 
 
 
-/*
+
   // ADD THE MENU SYSTEM
-  */
   function register_gwd_starter_menus() {
       register_nav_menus(
         array(
@@ -160,7 +147,7 @@ function gwd_starter_theme_init(){
 
 
 
-// ADDS THE PREVIOUS/NEXT PAGINATION NAVIGATION LIST
+// ADDS THE GWD EPORTFOLIO PREVIOUS/NEXT PAGINATION NAVIGATION LIST
 
 if (!function_exists('eg_CAnav')){
 // Make sure that function name does not already exist
