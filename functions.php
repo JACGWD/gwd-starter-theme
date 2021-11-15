@@ -190,7 +190,7 @@ if (!function_exists('eg_CAnav')){
                 </li>
                 <?php } ?>
 
-                <li class="up-to-CA-gallery"><a class="page-link" href="<?php echo get_permalink($post->post_parent); ?>"><?php echo get_the_title($post->post_parent); ?></a></li>  
+                <li class="up-to-gallery"><a class="page-link" href="<?php echo get_permalink($post->post_parent); ?>"><?php echo get_the_title($post->post_parent); ?></a></li>  
                 
                 <?php
                 if (!empty($nextID)) { ?>
