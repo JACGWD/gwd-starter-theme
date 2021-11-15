@@ -221,13 +221,36 @@ USE EITHER LANDSCAPE OR PORTRAIT IMAGES
 
 
 /*
-      Old School Image Replacement Technique
-      .hide-text for image replacements
-      See: http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/
-  */
+OLD SCHOOL IMAGE REPLACEMENT TECHNIQUE
+.HIDE-TEXT FOR IMAGE REPLACEMENTS
+SEE: HTTP://WWW.ZELDMAN.COM/2012/03/01/REPLACING-THE-9999PX-HACK-NEW-IMAGE-REPLACEMENT/
+*/
   .hide-text {
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
   }
   
+
+/*
+* CLEARFIX: CONTAIN FLOATS
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
