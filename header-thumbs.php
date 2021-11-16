@@ -31,6 +31,20 @@ if (!defined('ABSPATH'))
 
 <?php get_search_form(); ?>
 
+<nav class="primary-navigation">
+<button class="hide-text">Menu</button>
+
+<?php
+  wp_nav_menu(array(
+	'menu_class'	  	=> 'primary-menu',
+	'theme_location' 	=> 'header-menu',
+	'menu_id'	    		=> 'menu',
+  'container'       => 'div',
+	'container_id'		=> 'menu-container',
+));
+?>
+</nav>
+
 <div id="branding">
 <?php 
        if ( function_exists( 'the_custom_logo' ) ) {
@@ -60,19 +74,7 @@ if (!defined('ABSPATH'))
 
   <?php // ADD NAVIGATION ?>
 
-<nav class="primary-navigation">
-<button aria-expanded="false" aria-controls="menu" class="hide-text">Menu</button>
 
-<?php
-  wp_nav_menu(array(
-	'menu_class'	  	=> 'primary-menu',
-	'theme_location' 	=> 'header-menu',
-	'menu_id'	    		=> 'menu',
-  'container'       => 'div',
-	'container_id'		=> 'menu-container',
-));
-?>
-</nav>
 
   
 
