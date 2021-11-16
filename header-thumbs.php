@@ -70,7 +70,6 @@ if (!defined('ABSPATH'))
 	'menu_id'	    		=> 'menu',
   'container'       => 'div',
 	'container_id'		=> 'menu-container',
-  'menu_aria_label' => 'hidden'
 ));
 ?>
 </nav>
@@ -79,7 +78,4 @@ if (!defined('ABSPATH'))
 
 </header> 
 <!--- HEADER ENDS HERE -----> 
-
-<div class="main-container">
-<!---  CONTAINER DIV OPENS HERE ----->
 

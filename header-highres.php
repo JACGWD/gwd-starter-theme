@@ -7,7 +7,7 @@ if (!defined('ABSPATH'))
 ?>
 
 <!doctype html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> class="no-js">
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -67,7 +67,7 @@ if (!defined('ABSPATH'))
 	'menu_id'	    		=> 'menu',
   'container'       => 'div',
 	'container_id'		=> 'menu-container',
-  'menu_aria_label' => 'hidden'
+
 ));
 ?>
 </nav>
