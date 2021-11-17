@@ -58,7 +58,7 @@ if (!defined('ABSPATH'))
     ?>
 
     
-
+<div class="brand-texts">
     <div class="site-title">
         <a href="<?php echo get_option('home'); ?>">
           <?php bloginfo('name'); ?>
@@ -75,7 +75,7 @@ if (!defined('ABSPATH'))
 
   </div>
   <!-- END BRANDING -->
-  
+  </div>
 
 
 
