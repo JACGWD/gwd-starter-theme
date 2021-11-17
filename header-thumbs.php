@@ -28,7 +28,7 @@ if (!defined('ABSPATH'))
   
 <!--- HEADER STARTS HERE ----->
 <header>
-
+<div class="header-nav-search">
 <?php get_search_form(); ?>
 
 <nav class="primary-navigation">
@@ -44,6 +44,8 @@ if (!defined('ABSPATH'))
 ));
 ?>
 </nav>
+</div>
+
 
 <div id="branding">
 <?php 
