@@ -84,7 +84,7 @@ ul#menu {
 ul#menu.show-nav {
   display: block !important;
 }
-/* display navigation class */
+/* class that javascript adds to force the navigation to display  */
 
 
 nav.primary-navigation button {
