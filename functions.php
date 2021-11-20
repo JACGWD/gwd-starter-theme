@@ -21,7 +21,7 @@ add_action( 'wp_enqueue_scripts', 'gwd_starter_theme_scripts' );
 
 // ENQUEUE MODERNIZR FOR BROWSER FEATURE DETECTION
 function gwdstarter_modernizr() {
-    $modernizr_path = get_template_directory_uri() . '/js/modernizr-jacgwd.min.js';
+    $modernizr_path = get_template_directory() . '/js/modernizr-jacgwd.min.js';
     $modernizr_version = filemtime($modernizr_path);
     wp_enqueue_script( 'gwdstarter-modernizr', get_template_directory_uri() . '/js/modernizr-jacgwd.min.js', array(), $modernizr_version, true );
 }
@@ -31,7 +31,7 @@ add_action( 'wp_enqueue_scripts', 'gwdstarter_modernizr' );
 
 // ENQUEUE JQUERY-UI.JS FILE
 function gwdstarter_jquery_ui() {
-    $jquery_ui = get_template_directory_uri() . '/js/jquery-ui.min.js';
+    $jquery_ui = get_template_directory() . '/js/jquery-ui.min.js';
     $jquery_ui_version  = filemtime($jquery_ui);
     wp_enqueue_script( 'gwdstarter_jquery_ui', get_template_directory_uri() . '/js/jquery-ui.min.js', array( 'jquery' ), $jquery_ui_version, true );
 }
@@ -41,7 +41,7 @@ add_action( 'wp_enqueue_scripts', 'gwdstarter_jquery_ui' );
 
 // ENQUEUE COMBINED-SCRIPTS.JS FILE
 function gwdstarter_combined_scripts() {
-    $combined_scripts = get_template_directory_uri() . '/js/combined-scripts.js';
+    $combined_scripts = get_template_directory() . '/js/combined-scripts.js';
     $combined_scripts_version  = filemtime($combined_scripts);
     wp_enqueue_script( 'gwdstarter_combined_scripts', get_template_directory_uri() . '/js/combined-scripts.js', array( 'jquery' ), $combined_scripts_version, true );
 }
@@ -50,7 +50,7 @@ add_action( 'wp_enqueue_scripts', 'gwdstarter_combined_scripts' );
 
 // ENQUEUE GOOGLE ANALYTICS JS FILE
 function gwdstarter_google() {
-    $gwd_ga = get_template_directory_uri() . '/js/google-analytics.js';
+    $gwd_ga = get_template_directory() . '/js/google-analytics.js';
     $gwd_ga_version  = filemtime($gwd_ga);
     wp_enqueue_script( 'gwdstarter_google', get_template_directory_uri() . '/js/google-analytics.js', array(), $gwd_ga_version, true );
 }
@@ -94,7 +94,12 @@ if(!function_exists('eg_enableWidgets')) {
 
 
 
-
+function get_act_url() {
+	$act_url  = ( isset( $_SERVER['HTTPS'] ) && 'on' === $_SERVER['HTTPS'] ) ? 'https' : 'http';
+	$act_url .= '://' . $_SERVER['SERVER_NAME'];
+	$act_url .= in_array( $_SERVER['SERVER_PORT'], array( '80', '443' ) ) ? '' : ":" . $_SERVER['SERVER_PORT'];
+	return $act_url;
+}
 
 
 
