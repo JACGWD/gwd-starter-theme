@@ -22,7 +22,7 @@ add_action( 'wp_enqueue_scripts', 'gwd_starter_theme_scripts' );
 // ENQUEUE MODERNIZR FOR BROWSER FEATURE DETECTION
 function gwdstarter_modernizr() {
     $modernizr_path = get_template_directory_uri() . '/js/modernizr-jacgwd.min.js';
-    $modernizr_version = filemtime($stylesheet);
+    $modernizr_version = filemtime($modernizr_path);
     wp_enqueue_script( 'gwdstarter-modernizr', get_template_directory_uri() . '/js/modernizr-jacgwd.min.js', array(), $modernizr_version, true );
 }
 add_action( 'wp_enqueue_scripts', 'gwdstarter_modernizr' );
