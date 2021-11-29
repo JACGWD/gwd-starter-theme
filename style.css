@@ -38,6 +38,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* Extra-Small devices (portrait phones, less than 576px)  */
 
 img {max-width: 100%; height: auto;}
+/* forces images to be responsive */
 
 body {
   font-size: 100%;
@@ -177,7 +178,7 @@ USE EITHER LANDSCAPE OR PORTRAIT IMAGES
   }
 
   ul#menu {
-    display: block;
+    display: flex;
   }
 
 }
