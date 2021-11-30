@@ -9,8 +9,8 @@ if (!defined('ABSPATH'))
 
 
 // AUTO UPDATE WP CORE, PLUGINS AND THEMES
-add_filter( 'allow_minor_auto_core_updates', '__return_true' );         // Enable minor updates
-add_filter( 'allow_major_auto_core_updates', '__return_true' );         // Enable major updates
+add_filter( 'allow_minor_auto_core_updates', '__return_true' );         // ENABLE MINOR UPDATES
+add_filter( 'allow_major_auto_core_updates', '__return_true' );         // ENABLE MAJOR UPDATES
 add_filter( 'auto_update_plugin', '__return_true' );                    // UPDATE PLUGINS
 add_filter( 'auto_update_theme', '__return_true' );                     // UPDATE THEMES 
 
