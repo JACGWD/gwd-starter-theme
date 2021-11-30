@@ -9,10 +9,8 @@ if (!defined('ABSPATH'))
 
 
 // AUTO UPDATE WP CORE, PLUGINS AND THEMES
-add_filter( 'allow_dev_auto_core_updates', '__return_true' );           // Enable development updates
 add_filter( 'allow_minor_auto_core_updates', '__return_true' );         // Enable minor updates
 add_filter( 'allow_major_auto_core_updates', '__return_true' );         // Enable major updates
-add_filter( 'automatic_updates_is_vcs_checkout', '__return_false', 1 ); // ENABLE IF GIT FOLDER IS FOUND IN WP
 add_filter( 'auto_update_plugin', '__return_true' );                    // UPDATE PLUGINS
 add_filter( 'auto_update_theme', '__return_true' );                     // UPDATE THEMES 
 
